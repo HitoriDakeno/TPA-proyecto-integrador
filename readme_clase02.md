@@ -3,7 +3,7 @@ Actividad Clase 2:
 
 1) ¿Qué problema resuelve la técnica de hoy?
 
-La complejidad práctica y el conteo de operaciones resuelven la necesidad de anticipar cómo se comportará un algoritmo al escalar el tamaño de la entrada. Permiten evaluar formalmente el costo computacional teórico y empírico más allá del tiempo cronológico del hardware, optimizando la toma de decisiones técnicas.
+  La complejidad práctica y el conteo de operaciones resuelven la necesidad de anticipar cómo se comportará un algoritmo al escalar el tamaño de la entrada. Permiten evaluar formalmente el   costo computacional teórico y empírico más allá del tiempo cronológico del hardware, optimizando la toma de decisiones técnicas.
 
 
 2) Archivo de Código y Pruebas
