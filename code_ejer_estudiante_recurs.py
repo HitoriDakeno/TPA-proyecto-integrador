@@ -34,7 +34,7 @@ def fragmento_b(n: int) -> int:
     return contador
 
 
-#USTIFICACIÓN DEL ORDEN ASINTÓTICO:
+#JUSTIFICACIÓN DEL ORDEN ASINTÓTICO:
 #
 # 1. fragmento_a(n):
 #    - La variable 'i' comienza en 1 y se multiplica por 2 en cada iteración (1, 2, 4, 8...).
