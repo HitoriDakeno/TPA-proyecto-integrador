@@ -4,7 +4,8 @@ PARTE 1:
 recursivo. ¿Qué ocurre en la pila de llamadas (call stack) si una función recursiva carece de
 un caso base alcanzable?
 
-R: El caso base es la condición de termino que resuelve el problema de forma directa y trivial sin realizar mas llamadas recursivas. El paso recursivo es la regla mediante la cual la función se llama a si misma reduciendo el problema hacia el caso base.
+R: El caso base es la condición de termino que resuelve el problema de forma directa y trivial sin realizar mas llamadas recursivas. 
+El paso recursivo es la regla mediante la cual la función se llama a si misma reduciendo el problema hacia el caso base.
 
 
 1.2 Traza de ejecución: Dado el algoritmo de Euclides para el máximo común divisor (mcd(a,b) que retorna mcd(b, a % b) 
