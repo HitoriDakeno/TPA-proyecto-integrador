@@ -261,13 +261,17 @@ der ya no tiene elementos, queda solo el 9 de izq, se agrega:
 
 
 
-4.3 Estabilidad algorítmica: Defina qué significa que un algoritmo de ordenamiento sea "estable". Explique por qué Merge Sort es estable (si se implementa correctamente la condición <=) y proporcione un ejemplo de la vida real donde la estabilidad sea necesaria.
+4.3 Estabilidad algorítmica: Defina qué significa que un algoritmo de ordenamiento sea "estable". Explique por qué Merge Sort
+es estable (si se implementa correctamente la condición <=) y proporcione un ejemplo de la vida real donde la estabilidad sea necesaria.
 
-R: Un algoritmo de ordenamiento es estable cuando, si dos elementos tienen la misma clave de ordenamiento, mantiene entre ellos el mismo orden relativo que tenían originalmente.
+R: Un algoritmo de ordenamiento es estable cuando, si dos elementos tienen la misma clave de ordenamiento, mantiene entre 
+ellos el mismo orden relativo que tenían originalmente.
 
-Merge Sort es estable si en la etapa de combinación se utiliza la condición <=. Así, cuando dos elementos tienen el mismo valor, se toma primero el elemento de la lista izquierda, manteniendo su orden original.
+Merge Sort es estable si en la etapa de combinación se utiliza la condición <=. Así, cuando dos elementos tienen el mismo 
+valor, se toma primero el elemento de la lista izquierda, manteniendo su orden original.
 
-Ejemplo de la vida real: ordenar una lista de estudiantes primero por curso y después por apellido. Si varios estudiantes pertenecen al mismo curso, la estabilidad permite conservar el orden por apellido que ya tenían, evitando alterar innecesariamente el orden entre ellos.
+Ejemplo de la vida real: ordenar una lista de estudiantes primero por curso y después por apellido. Si varios estudiantes
+pertenecen al mismo curso, la estabilidad permite conservar el orden por apellido que ya tenían, evitando alterar innecesariamente el orden entre ellos.
 
 
 
@@ -290,7 +294,9 @@ de búsqueda binaria para que, en lugar de retornar el índice de un elemento si
 retorne la cantidad total de veces que un número aparece en un arreglo ordenado (asuma
 que hay elementos repetidos). ¿Se mantiene la complejidad en O(log n)? Explique.
 
-R: Se puede adaptar encontrando por separado la primera posición y la ultima posición del elemento mediante búsquedas binarias modificadas. La cantidad total de apariciones se obtiene restando ambos índices (mas uno). La complejidad se mantiene en O(log n) (o O(log n + k) si se recorren linealmente las repeticiones k)
+R: Se puede adaptar encontrando por separado la primera posición y la ultima posición del elemento mediante búsquedas binarias modificadas. 
+La cantidad total de apariciones se obtiene restando ambos índices (mas uno). La complejidad se mantiene en O(log n) (o O(log n + k)
+si se recorren linealmente las repeticiones k)
 
 
 
