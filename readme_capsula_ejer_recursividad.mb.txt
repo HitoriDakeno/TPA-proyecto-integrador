@@ -25,9 +25,12 @@ en los índices i y j. No utilice ciclos for ni while.
 R: código subido al repositorio con test 
 
 
-1.4 Análisis de eficiencia: Explique detalladamente por qué la implementación recursiva ingenua de la sucesión de Fibonacci (Fn = Fn−1 + Fn−2) es ineficiente. Dibuje el árbol de llamadas para fib(5) para respaldar su argumento.
+1.4 Análisis de eficiencia: Explique detalladamente por qué la implementación recursiva ingenua de la sucesión de Fibonacci (Fn = Fn−1 + Fn−2) es ineficiente.
+Dibuje el árbol de llamadas para fib(5) para respaldar su argumento.
 
-R: La forma recursiva ingenua Fn = Fn-1 + Fn-2 es ineficiente porque recalcula multiples veces los mismos valores de forma independiente. La computadora no almacena ni recuerda los resultados que ya calculo en una rama anterior, por lo que vuelve a repetir todo el proceso desde cero cada vez que lo necesita. Esto provoca que el numero de llamadas crezca de manera exponencial a medida que n aumenta.
+R: La forma recursiva ingenua Fn = Fn-1 + Fn-2 es ineficiente porque recalcula multiples veces los mismos valores de forma independiente.
+La computadora no almacena ni recuerda los resultados que ya calculo en una rama anterior, por lo que vuelve a repetir todo el proceso 
+desde cero cada vez que lo necesita. Esto provoca que el numero de llamadas crezca de manera exponencial a medida que n aumenta.
 
                   fib(5)
                 /        \
@@ -42,7 +45,9 @@ fib(2)  fib(1) fib(1) fib(0) ... (sigue ramificándose)
 lista recursivamente pasando un índice (ej. func(lista, i+1)) versus recorrerla pasando
 una sublista mediante slicing (ej. func(lista[1:])).
 
-R: pasar un índice tiene un costo temporal y espacial de O(1) por llamada, ya que solo se pasa un puntero numerico entero como argumento sin duplicar datos. Pasar una sublista por slicing obliga a Python a copiar físicamente los elementos restantes en un bloque de memoria nuevo en cada paso, elevando el costo temporal y espacial a un orden cuadratico O(n2).
+R: pasar un índice tiene un costo temporal y espacial de O(1) por llamada, ya que solo se pasa un puntero numerico entero 
+como argumento sin duplicar datos. Pasar una sublista por slicing obliga a Python a copiar físicamente los elementos restantes 
+en un bloque de memoria nuevo en cada paso, elevando el costo temporal y espacial a un orden cuadratico O(n2).
 
 
 PARTE 2:
@@ -50,7 +55,8 @@ PARTE 2:
 2.1 Concepto estructural: ¿Por qué el paradigma recursivo es naturalmente adecuado para
 procesar estructuras como documentos JSON o sistemas de archivos (carpetas y subcarpetas)?
 
-R: El paradigma recursivo es adecuado porque estas estructuras son jerárquicas y contienen elementos dentro de otros. La recursividad permite procesar cada elemento y volver a aplicar el mismo procedimiento a sus subelementos, sin importar cuantos niveles de profundidad existan.
+R: El paradigma recursivo es adecuado porque estas estructuras son jerárquicas y contienen elementos dentro de otros. La recursividad
+permite procesar cada elemento y volver a aplicar el mismo procedimiento a sus subelementos, sin importar cuantos niveles de profundidad existan.
 
 
 2.2 Desarrollo de código: Escriba una función recursiva profundidad_maxima(x) que reciba
@@ -70,7 +76,8 @@ R: código subido con el test
 (contando tanto los contenedores como los valores simples o primitivos), justifique por qué
 el costo de recorrerla completamente con una función recursiva bien diseñada es O(N).
 
-R: El costo es O(N) porque la función recorre cada elemento de la estructura una sola vez. Cada elemento realiza una cantidad constante de trabajo y, aunque haya llamadas recursivas, en total se procesan los n elementos, por lo que la complejidad es O(n).
+R: El costo es O(N) porque la función recorre cada elemento de la estructura una sola vez. Cada elemento 
+realiza una cantidad constante de trabajo y, aunque haya llamadas recursivas, en total se procesan los n elementos, por lo que la complejidad es O(n).
 
 
 PARTE 3:
@@ -79,7 +86,8 @@ PARTE 3:
 relación de recurrencia T(n) = T(n − 1) + O(1). Dé un ejemplo de una función recursiva
 estudiada en clases que posea este costo temporal.
 
-R: La relacion T(n) = T(n-1) + O(1) modela un algoritmo que reduce el tamaño del problema de uno en uno cada paso, realiando una cantidad constante de trabajo por iteración, ejemplo: la suma de una lista mediante índice, el factorial, o la potencia linal.
+R: La relacion T(n) = T(n-1) + O(1) modela un algoritmo que reduce el tamaño del problema de uno en uno cada paso,
+realiando una cantidad constante de trabajo por iteración, ejemplo: la suma de una lista mediante índice, el factorial, o la potencia linal.
 
 
 3.2 Método de expansión: Resuelva paso a paso la siguiente relación de recurrencia utilizando
