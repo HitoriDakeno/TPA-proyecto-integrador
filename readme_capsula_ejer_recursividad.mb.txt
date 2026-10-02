@@ -298,6 +298,12 @@ R: Se puede adaptar encontrando por separado la primera posición y la ultima po
 La cantidad total de apariciones se obtiene restando ambos índices (mas uno). La complejidad se mantiene en O(log n) (o O(log n + k)
 si se recorren linealmente las repeticiones k)
 
+4.6 Desarrollo de código (Máximo Divide y Vencerás): Escriba una función en Python
+maximo_dc(arreglo, lo, hi) que encuentre el valor máximo en un arreglo utilizando Dividir para Conquistar (dividiendo el arreglo en dos mitades, buscando el máximo en cada
+una y comparándolos). Escriba su relación de recurrencia T(n).
+
+R: codigo subido.
+
 
 
 
